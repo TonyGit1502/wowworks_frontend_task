@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tasklist</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 navigation">
+					<div class="left-nav">
+						<span class="logo">taskon</span>
+						<a href="#" class="menu-link">
+							<span></span>
+						</a>
+						<div class="menu">
+							<ul class="menu-items">
+								<li><a href="#">Задания</a></li>
+								<li><a href="#">Финансы</a></li>
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Статистика</a></li>
+							</ul>
+						</div>
+						<ul class="main-menu">
+							<a href="#"><li>Задания</li></a>
+							<a href="#"><li>Финансы</li></a>
+							<a href="#"><li>Компания</li></a>
+							<a href="#"><li>Статистика</li></a>
+						</ul>
+					</div>
+					<div class="right-nav">
+						<h5>Баланс  <span>218 982,90 &#8381;</span></h5>
+						<i class="fa fa-bell" aria-hidden="true"></i><span class="notif"></span>
+						<select name="" id="header-list">
+							<option value="">Никита Ласточкин</option>
+						</select>
+						<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="main">
+		<div class="col-xs-12 status-panel">
+			<h2>Задания</h2>
+			<ul class="task-type">
+				<a href="#"><li>Новые <span class="counter"></span></li></a>
+				<a href="#"><li>В работе <span class="counter"></span></li></a>
+				<a href="#"><li>На рассмотрении <span class="counter"></span></li></a>
+				<a href="#"><li>Выполнены <span class="counter"></span></li></a>
+				<a href="#"><li>Отменены <span class="counter"></span></li></a>
+				<a href="#"><li>Черновики <span class="counter"></span></li></a>
+			</ul>
+			<a href="#" class="add-task"><span></span></a>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 filters">
+				<form action="#">
+					<input type="text" placeholder="Поиск по слову">
+					<input type="checkbox" id="checkbox_1">
+					<label for="checkbox_1">Персональное</label>
+					<input type="checkbox" id="checkbox_2">
+					<label for="checkbox_2">Ночное</label>
+					<input type="checkbox" id="checkbox_3">
+					<label for="checkbox_3">Срочное</label>
+					<select name="" id="">
+						<option value="">Никита Ласточкин</option>
+					</select>
+				</form>
+				<ul class="filter-form">
+					<li><input type="text" placeholder="Поиск по слову"></li>
+					<li><input type="checkbox" id="checkbox_1">
+					<label for="checkbox_1">Персональное</label></li>
+					<li><input type="checkbox" id="checkbox_2">
+					<label for="checkbox_2">Ночное</label></li>
+					<li><input type="checkbox" id="checkbox_3"><label for="checkbox_3">Срочное</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 table-task">
+				<table class="table table-responsive table-hover">
+					<tr class="table-head">
+						<th>ID</th>
+						<th>Город</th>
+						<th>Название</th>
+						<th>Выполнить до</th>
+						<th>Сумма</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var link = $('.menu-link');
+			var menu = $('.menu');
+
+			link.click(function(){
+				link.toggleClass('menu-link_active');
+				menu.toggleClass('menu_active');
+			});
+		}); 
+	</script>
+</body>
+</html>
